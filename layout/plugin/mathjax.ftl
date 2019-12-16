@@ -1,4 +1,5 @@
 <#if (is_post?? || is_sheet??) && settings.mathjax_enable!false>
+    <script src="https://res.moilk.top/js/katex/katex.min.js"></script>
     <script>
         var mathElems = document.getElementsByClassName("math");
         var elems = [];
