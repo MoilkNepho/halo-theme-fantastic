@@ -1,6 +1,6 @@
 <#if (is_post?? || is_sheet??) && settings.mathjax_enable!false>
     <script>
-        var mathElems = document.getElementsByClassName("katex");
+        var mathElems = document.getElementsByClassName("math");
         var elems = [];
         for (const i in mathElems) {
             if (mathElems.hasOwnProperty(i)) elems.push(mathElems[i]);
