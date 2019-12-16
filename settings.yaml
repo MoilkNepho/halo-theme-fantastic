@@ -166,7 +166,7 @@ post:
       type: select
       default: Default
       options:
-        - value: Default
+        - value: null
           label: Default
         - value: Coy
           label: Coy
@@ -174,9 +174,9 @@ post:
           label: Dark
         - value: Okaidia
           label: Okaidia
-        - value: Solarized Light
+        - value: SolarizedLight
           label: Solarized Light
-        - value: Tomorrow Night
+        - value: TomorrowNight
           label: Tomorrow Night
         - value: Twilight
           label: Twilightt
