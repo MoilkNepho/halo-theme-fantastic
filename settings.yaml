@@ -166,7 +166,7 @@ post:
       type: select
       default: Default
       options:
-        - value: ''
+        - value: Default
           label: Default
         - value: Coy
           label: Coy
