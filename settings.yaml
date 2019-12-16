@@ -149,9 +149,9 @@ post:
       label: 微信捐赠二维码
       type: attachment
       placeholder: '二维码地址'
-    mathjax_enable:
-      name: mathjax_enable
-      label: MathJax
+    katex_enable:
+      name: katex_enable
+      label: Katex
       type: radio
       data-type: bool
       default: false
@@ -160,16 +160,26 @@ post:
           label: 开启
         - value: false
           label: 关闭
-#    code_pretty:
-#      name: code_pretty
-#      label: 文章代码高亮主题
-#      type: select
-#      default: light
-#      options:
-#        - value: Dark
-#          label: dark
-#        - value: light
-#          label: light
+    hightlight:
+      name: hightlight
+      label: 文章代码高亮主题
+      type: select
+      default: Default
+      options:
+        - value: Default
+          label: Default
+        - value: Coy
+          label: Coy
+        - value: Dark
+          label: Dark
+        - value: Okaidia
+          label: Okaidia
+        - value: Solarized Light
+          label: Solarized Light
+        - value: Tomorrow Night
+          label: Tomorrow Night
+        - value: Twilight
+          label: Twilightt
 social:
   label: 社交设置
   items:

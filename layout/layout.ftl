@@ -33,7 +33,7 @@
         <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.1/css/all.css">
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
         <#--        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">-->
-        <#if (is_post?? || is_sheet??) && settings.mathjax_enable!false>
+        <#if (is_post?? || is_sheet??) && settings.katex_enable!false>
             <link rel="stylesheet" href="https://res.moilk.top/js/katex/katex.min.css">
         </#if>
         <style>
@@ -76,7 +76,7 @@
         <#--            <link rel="stylesheet" type="text/css"-->
         <#--                  href="${static!}/source/lib/prism/css/prism-${settings.code_pretty!'Default'}.css"/>-->
             <link rel="stylesheet" type="text/css"
-                  href="${static!}/source/lib/prism/css/prism.css"/>
+                  href="${static!}/source/lib/prism/css/prism-${settings.highlight!'Default'}.css"/>
             <link rel="stylesheet" type="text/css"
                   href="${static!}/source/lib/prism/css/prism-line-numbers.css"/>
             <script type="text/javascript" src="${static!}/source/lib/prism/js/prism.js"></script>

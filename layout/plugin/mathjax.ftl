@@ -1,4 +1,4 @@
-<#if (is_post?? || is_sheet??) && settings.mathjax_enable!false>
+<#if (is_post?? || is_sheet??) && settings.katex_enable!false>
     <script src="https://res.moilk.top/js/katex/katex.min.js"></script>
     <script>
     document.addEventListener("DOMContentLoaded", function () {
