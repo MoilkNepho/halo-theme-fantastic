@@ -3,7 +3,6 @@
  * --------------------------------- */
 html {
   font-size: 14px;
-  overflow: -moz-hidden-unscrollable;
 }
 .section {
   padding: 2rem 1.5rem;
@@ -101,6 +100,10 @@ textarea {
   position: relative;
   border-radius: 2px;
   box-shadow: 3px 4px 12px 0 rgba(0,0,0,0.2);
+}
+.card-normal .card:hover .card-image img {
+  -webkit-filter: brightness(0.85);
+  filter: brightness(0.85);
 }
 .card-normal .card .card-content {
   flex: 12;
@@ -244,10 +247,13 @@ img.thumbnail {
 }
 .article .content a {
   word-wrap: break-word;
-  border-bottom: 0.0625rem dashed #eee;
 }
 .article .content p {
   line-height: 1.9rem;
+}
+.article blockquote {
+  border-left: 0.4rem solid #4b8af3;
+  background-color: #e9f5fe;
 }
 .rtl {
   direction: rtl;
@@ -558,6 +564,101 @@ iframe,
 video {
   height: none;
 }
-.post-content a {
-  border-bottom: 0.0625rem dashed #eee;
+.post-article {
+  word-wrap: break-word;
+  line-height: 1.8;
+  letter-spacing: 0.013rem;
+}
+.post-article a {
+  position: relative;
+  white-space: normal;
+  color: #4b8af3;
+  background: transparent;
+  text-decoration: none;
+  font-weight: 500;
+  word-break: break-all;
+}
+.post-article a::after {
+  position: absolute;
+  bottom: -0.2rem;
+  left: 100%;
+  width: 0;
+  border-bottom: 0.13rem solid #4b8af3;
+  content: "";
+  -webkit-transition: width 350ms, left 350ms;
+  -moz-transition: width 350ms, left 350ms;
+  -ms-transition: width 350ms, left 350ms;
+  -o-transition: width 350ms, left 350ms;
+  transition: width 350ms, left 350ms;
+}
+.post-article a:hover::after {
+  left: 0;
+  width: 100%;
+  -webkit-transition: width 350ms;
+  -moz-transition: width 350ms;
+  -ms-transition: width 350ms;
+  -o-transition: width 350ms;
+  transition: width 350ms;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  text-align: justify;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.comment-item-content img {
+  width: 100%;
+}
+.ceta .is-active {
+  border-bottom: #4b8af3 solid 2px;
+  font-weight: 600;
+
+}
+.ceta .tabs a {
+  border-bottom-style: none;
+}
+.ceta .tabs a:hover {
+  color: #4b8af3;
+  font-weight: 500;
+}
+
+.widget .media + .media {
+  margin-bottom: 0
+}
+
+.media+.media {
+  padding-top: 0;
+}
+
+.card .media:not(:last-child) {
+   margin-bottom: 0
+}
+
+.profile .title {
+  line-height: 0.2;
+}
+.profile .level {
+  margin-bottom: 2em;
+}
+.profile .level:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.profile .level:last-child {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+.intro {
+  margin-top: 20px;
+}
+.intro i{
+  font-size: 20px;
+  color: #8e8787;
+}
+.searchbox .searchbox-result-wrapper {
+  overflow-y: visible !important;
 }
