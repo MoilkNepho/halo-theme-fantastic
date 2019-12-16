@@ -18,6 +18,12 @@
                     <a class="is-flex-grow has-text-black-ter" href="${context!}/search/page/${posts.number+2}?keyword=${keyword}">下一页</a>
                 </div>
                 <ul class="pagination-list is-hidden-mobile">
+                    <#if (rainbow?size> 0 && rainbow[0] >= 2)>
+                        <a class="pagination-link" href="${context!}/search/page/1?keyword=${keyword}">1</a>
+                        <#if (rainbow[0]> 2)>
+                            <span class="pagination-space">...</span>
+                        </#if>
+                    </#if>
                     <#list rainbow as r>
                         <#if r == posts.number+1>
                             <li><a class="pagination-link is-current" href="${context!}/search/page/${posts.number+1}?keyword=${keyword}">${posts.number+1}</a></li>
@@ -25,6 +31,12 @@
                             <li><a class="pagination-link " href="${context!}/search/page/${r}?keyword=${keyword}">${r}</a></li>
                         </#if>
                     </#list>
+                    <#if (rainbow?size> 0 && rainbow[rainbow?size-1] < posts.totalPages)>
+                        <#if (rainbow[rainbow?size-1] < posts.totalPages-1)>
+                            <span class="pagination-space">...</span>
+                        </#if>
+                        <a class="pagination-link" href="${context!}/search/page/${posts.totalPages}?keyword=${keyword}">${posts.totalPages}</a>
+                    </#if>
                 </ul>
             </nav>
         </div>

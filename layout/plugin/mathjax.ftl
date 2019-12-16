@@ -1,23 +1,15 @@
 <#if (is_post?? || is_sheet??) && settings.mathjax_enable!false>
-    <script src="//cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+    <script src="https://res.moilk.top/js/katex/katex.min.js"></script>
     <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        MathJax.Hub.Config({
-            'HTML-CSS': {
-                matchFontHeight: false
-            },
-            SVG: {
-                matchFontHeight: false
-            },
-            CommonHTML: {
-                matchFontHeight: false
-            },
-            tex2jax: {
-                inlineMath: [
-                    ['$','$'],
-                    ['\\(','\\)']
-                ]
-            }
+    document.addEventListener("DOMContentLoaded", function () {
+        var mathElems = document.getElementsByClassName("katex");
+        var elems = [];
+        for (const i in mathElems) {
+            if (mathElems.hasOwnProperty(i)) elems.push(mathElems[i]);
+        }
+
+        elems.forEach(elem => {
+            katex.render(elem.textContent, elem, { throwOnError: false, displayMode: elem.nodeName !== 'SPAN', });
         });
     });
     </script>
