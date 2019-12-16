@@ -1,5 +1,5 @@
-/* PrismJS 1.15.0
-https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+apacheconf+applescript+c+csharp+autohotkey+bash+basic+cpp+aspnet+arduino+ruby+css-extras+d+dart+django+docker+markup-templating+git+go+groovy+less+haskell+http+hpkp+hsts+ini+java+javastacktrace+json+julia+kotlin+latex+markdown+lua+makefile+nginx+objectivec+opencl+perl+php+php-extras+sql+powershell+properties+scss+pure+python+r+jsx+typescript+rust+sass+stylus+scala+scheme+plsql+pug+swift+yaml+haml+toml+tsx+vbnet+velocity+vim+visual-basic */
+/* PrismJS 1.17.1
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript */
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/chriskempson/tomorrow-theme
@@ -11,6 +11,7 @@ pre[class*="language-"] {
 	color: #ccc;
 	background: none;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
