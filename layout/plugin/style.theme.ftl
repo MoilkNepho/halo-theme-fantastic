@@ -193,6 +193,22 @@
         color: var(--color) !important;
     }
 
+    .math {
+        overflow: auto;
+    }
+    
+    .math::-webkit-scrollbar,
+    code::-webkit-scrollbar {
+        height: 10px;
+        background-color: #00000000;
+    }
+
+    .math::-webkit-scrollbar-thumb:hover,
+        code::-webkit-scrollbar-thumb:hover {
+        border-radius: 10px;
+        background-color: #989898;
+    }
+
     .card .content,
         /*.card .title a{*/
         /*    color: var(--cardtitlecolor) !important;*/
