@@ -230,7 +230,7 @@
 
     pre,
     blockquote {
-        background-color: var(--code-bg-color) !important;
+        /*background-color: var(--code-bg-color) !important;*/
         color: var(--color) !important;
     }
 
@@ -319,13 +319,13 @@
 
     code {
         color: var(--color);
-        background-color: var(--code-bg-color)
+        /* background-color: var(--code-bg-color) */
     }
 
     code[class*="language-"],
     pre[class*="language-"] {
         color: var(--color);
-        background-color: var(--code-bg-color) !important;
+        /* background-color: var(--code-bg-color) !important; */
     }
 
     pre[class*="language-"],
