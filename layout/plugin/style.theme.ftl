@@ -16,24 +16,6 @@
         --link-color: #1485FE;
         --link-hover-color: #1485FE;
 
-        /*code highlight*/
-        /*
-        --code-bg-color: #F1F3F3;
-        --code-default-color: #A2A1A1;
-        --code-line-numbers-bg-color: #EBEDED;
-        --code-line-numbers-color: #888;
-
-        --code-keyworks-color: #7012cc;
-        --code-class-color: #f2777a;
-        --code-cdata-color: hsl(313, 67%, 36%);
-        --code-symbol-color: hsl(33, 83%, 45%);
-        --code-variable-color: hsl(281, 89%, 64%);
-        --code-regex-color: #e90;
-        --code-deleted-color: red;
-        --code-toolbar-bg-color: #EBEDED;
-        --code-toolbar-color: #1485FE;
-        --code-line-numbers-rows-color: #888;
-        */
         /*toc*/
         --toc-dot-color: #1485FE;
         --toc-dot-active-color: #1485FE;
@@ -61,7 +43,6 @@
             --link-hover-color: #1485FE;
 
             /*code highlight*/
-            /*
             --code-bg-color: #F1F3F3;
             --code-default-color: #A2A1A1;
             --code-line-numbers-bg-color: #EBEDED;
@@ -77,7 +58,6 @@
             --code-toolbar-bg-color: #EBEDED;
             --code-toolbar-color: #1485FE;
             --code-line-numbers-rows-color: #888;
-            */
             /*toc*/
             --toc-dot-color: #1485FE;
             --toc-dot-active-color: #1485FE;
@@ -107,7 +87,6 @@
             --link-hover-color: #1485FE;
 
             /*code highlight*/
-            /*
             --code-bg-color: #2c2a2a;
             --code-default-color: #A2A1A1;
             --code-line-numbers-bg-color: #403E3E;
@@ -123,7 +102,6 @@
             --code-toolbar-bg-color: #454545;
             --code-toolbar-color: #fff;
             --code-line-numbers-rows-color: #888;
-            */
 
             /*toc*/
             --toc-dot-color: #1485FE;
@@ -152,24 +130,6 @@
             --link-color: #1485FE;
             --link-hover-color: #1485FE;
 
-            /*code highlight*/
-            /*
-            --code-bg-color: #F1F3F3;
-            --code-default-color: #A2A1A1;
-            --code-line-numbers-bg-color: #EBEDED;
-            --code-line-numbers-color: #888;
-
-            --code-keyworks-color: #7012cc;
-            --code-class-color: #f2777a;
-            --code-cdata-color: hsl(313, 67%, 36%);
-            --code-symbol-color: hsl(33, 83%, 45%);
-            --code-variable-color: hsl(281, 89%, 64%);
-            --code-regex-color: #e90;
-            --code-deleted-color: red;
-            --code-toolbar-bg-color: #EBEDED;
-            --code-toolbar-color: #1485FE;
-            --code-line-numbers-rows-color: #888;
-            */
             /*toc*/
             --toc-dot-color: #1485FE;
             --toc-dot-active-color: #1485FE;
@@ -230,7 +190,6 @@
 
     pre,
     blockquote {
-        /*background-color: var(--code-bg-color) !important;*/
         color: var(--color) !important;
     }
 
@@ -319,14 +278,28 @@
 
     code {
         color: var(--color);
-        /* background-color: var(--code-bg-color) */
     }
 
     code[class*="language-"],
     pre[class*="language-"] {
         color: var(--color);
-        /* background-color: var(--code-bg-color) !important; */
     }
+
+<#if settings.auto_theme!true>
+    code {
+        background-color: var(--code-bg-color) !important;
+    }
+    
+    code[class*="language-"],
+    pre[class*="language-"] {
+        background-color: var(--code-bg-color) !important;
+    }
+
+    pre,
+    blockquote {
+        background-color: var(--code-bg-color) !important;
+    }
+</#if>
 
     pre[class*="language-"],
     :not(pre) > code[class*="language-"] {

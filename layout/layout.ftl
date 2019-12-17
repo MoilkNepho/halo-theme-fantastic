@@ -75,8 +75,10 @@
         <#if post??>
         <#--            <link rel="stylesheet" type="text/css"-->
         <#--                  href="${static!}/source/lib/prism/css/prism-${settings.code_pretty!'Default'}.css"/>-->
-            <link rel="stylesheet" type="text/css"
-                  href="${static!}/source/lib/prism/css/prism${settings.hightlight!'Default'}.css"/>
+            <#if !settings.auto_theme!true>
+                <link rel="stylesheet" type="text/css"
+                    href="${static!}/source/lib/prism/css/prism${settings.hightlight!'Default'}.css"/>
+            </#if>
             <link rel="stylesheet" type="text/css"
                   href="${static!}/source/lib/prism/css/prism-line-numbers.css"/>
             <script type="text/javascript" src="${static!}/source/lib/prism/js/prism.js"></script>
