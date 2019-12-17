@@ -23,7 +23,7 @@
                             <div class="blog-slider__content">
                                 <span class="blog-slider__code">${post.createTime?string["EEE MMM d"]}</span>
                                 <div class="blog-slider__title blog-pin-title"><a class="title is-5" href="${context!}/archives/${post.url!}">${post.title!}</a></div>
-                                <div id="is-hidden-touch" class="blog-slider__text blog-pin-disc" content="">${post.summary!}</div>
+                                <div class="blog-slider__text blog-pin-disc is-hidden-touch" content="">${post.summary!}</div>
                                 <a href="${context!}/archives/${post.url!}" class="blog-slider__button">阅读更多</a>
                             </div>
                         </div>
