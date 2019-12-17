@@ -77,7 +77,6 @@
         <#--                  href="${static!}/source/lib/prism/css/prism-${settings.code_pretty!'Default'}.css"/>-->
             <link rel="stylesheet" type="text/css"
                   href="${static!}/source/lib/prism/css/prism${settings.hightlight!'Default'}.css"/>
-            <link rel="stylesheet" type="text/css"
             <script type="text/javascript" src="${static!}/source/lib/prism/js/prism.js"></script>
         </#if>
         <#if is_index??>
