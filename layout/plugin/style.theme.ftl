@@ -78,8 +78,8 @@
             --navbarcolor: #bcbcbc;
             --navbarbgcolor: rgba(52, 50, 50, 0.7);
             /*--img-default-filter: grayscale(100%);*/
-            --img-default-filter: brightness(70%);
-            --img-hover-filter: none;
+            --img-default-filter: brightness(60%);
+            --img-hover-filter: brightness(75%);
             --btn-bg-color: #2c2a2a;
             --btn-color: #bcbcbc;
             --btn-hover-color: #3B3C3E;
