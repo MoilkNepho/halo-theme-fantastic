@@ -193,18 +193,22 @@
         color: var(--color) !important;
     }
 
+    pre[class*="language-"] {
+        border-radius: 4px;
+    }
+
     .math {
         overflow: auto;
     }
-    
+
     .math::-webkit-scrollbar,
-    code::-webkit-scrollbar {
+    pre[class*="language-"]::-webkit-scrollbar {
         height: 10px;
         background-color: #00000000;
     }
 
     .math::-webkit-scrollbar-thumb:hover,
-        code::-webkit-scrollbar-thumb:hover {
+    pre[class*="language-"]::-webkit-scrollbar-thumb:hover {
         border-radius: 10px;
         background-color: #989898;
     }
