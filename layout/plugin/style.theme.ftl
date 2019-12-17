@@ -180,6 +180,11 @@
         filter: var(--img-hover-filter);
     }
 
+    .navbar-logo img {
+        -webkit-filter: none;
+        filter: none;
+    }
+
     .card .title {
         color: var(--color) !important;
     }
