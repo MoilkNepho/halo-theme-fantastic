@@ -126,6 +126,7 @@
                                                 <@module 'slider' />
                                             </div>
                                         </#if>
+                                        <#if settings.nav_enable!false>
                                         <div class="level is-medium">
                                             <div class="ceta">
                                                 <div class="tabs" style="overflow: hidden">
@@ -142,6 +143,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        </#if>
                                         <div class="level">
                                             <div class="columns">
                                                 <div class="column is-12-tablet is-12-desktop is-8-widescreen is-8-fullhd has-order-2 column-main">
