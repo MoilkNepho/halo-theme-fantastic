@@ -171,10 +171,12 @@
     }
 
     img {
+        -webkit-filter: var(--img-default-filter);
         filter: var(--img-default-filter);
     }
 
     img:hover {
+        -webkit-filter: var(--img-hover-filter);
         filter: var(--img-hover-filter);
     }
 
