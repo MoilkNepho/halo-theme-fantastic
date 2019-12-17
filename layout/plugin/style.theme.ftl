@@ -185,6 +185,10 @@
         filter: none;
     }
 
+    .navbar-logo img:hover {
+        filter: brightness(75%);
+    }
+
     .card .title {
         color: var(--color) !important;
     }
