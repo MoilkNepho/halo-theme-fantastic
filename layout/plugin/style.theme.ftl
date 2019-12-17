@@ -488,4 +488,18 @@
     .has-text-black-ter {
        color: var(--color) !important;
     }
+
+    .blog-pin-disc {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+    }
+
+    .blog-pin-title {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
 </style>
