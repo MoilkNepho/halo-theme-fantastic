@@ -78,7 +78,7 @@
             --navbarcolor: #bcbcbc;
             --navbarbgcolor: rgba(52, 50, 50, 0.7);
             /*--img-default-filter: grayscale(100%);*/
-            img-default-filter: brightness(50%);
+            img-default-filter: brightness(70%);
             --img-hover-filter: none;
             --btn-bg-color: #2c2a2a;
             --btn-color: #bcbcbc;
@@ -170,13 +170,11 @@
         color: var(--cardcolor);
     }
 
-    .card .card-image img,
-    img.thumbnail {
+    img {
         filter: var(--img-default-filter);
     }
 
-    .card .card-image img:hover,
-    img.thumbnail:hover {
+    img:hover {
         filter: var(--img-hover-filter);
     }
 
