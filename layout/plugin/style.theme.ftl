@@ -502,4 +502,20 @@
         -webkit-line-clamp: 2;
         overflow: hidden;
     }
+    @media (max-width: 1023px) {
+       .blog-pin-disc {
+            display: none;
+        } 
+    }
+
+    @media (max-width: 768px) {
+       .blog-pin-disc {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        } 
+    }
+
+
 </style>
