@@ -17,7 +17,6 @@
         --link-hover-color: #1485FE;
 
         /*code highlight*/
-        --code-bg-color: #F1F3F3;
         --code-default-color: #A2A1A1;
         --code-line-numbers-bg-color: #EBEDED;
         --code-line-numbers-color: #888;
@@ -59,7 +58,6 @@
             --link-hover-color: #1485FE;
 
             /*code highlight*/
-            --code-bg-color: #F1F3F3;
             --code-default-color: #A2A1A1;
             --code-line-numbers-bg-color: #EBEDED;
             --code-line-numbers-color: #888;
@@ -147,8 +145,6 @@
             --link-hover-color: #1485FE;
 
             /*code highlight*/
-            --code-bg-color: #F1F3F3;
-            --code-default-color: #A2A1A1;
             --code-line-numbers-bg-color: #EBEDED;
             --code-line-numbers-color: #888;
 
