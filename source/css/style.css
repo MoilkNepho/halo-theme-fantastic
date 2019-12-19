@@ -663,3 +663,6 @@ p {
 .searchbox .searchbox-result-wrapper {
   overflow-y: visible !important;
 }
+.blog-slider__img {
+  background-image: none;
+}
