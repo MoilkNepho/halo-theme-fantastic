@@ -6,13 +6,16 @@
         <@postTag method="latest" top="5">
             <#list posts as post>
                 <article class="media">
-                    <#if post.thumbnail?? && post.thumbnail!=''>
                         <a href="${context!}/archives/${post.url!}" class="media-left">
                             <p class="image is-64x64">
+                            <#if post.thumbnail?? && post.thumbnail!=''>
                                 <img class="thumbnail" src="${post.thumbnail!}" alt="${post.title!}">
+                            <#else>
+                                <img class="thumbnail" src="${static!}/source/images/thumbs/${randomMethod(0,15)}.svg"
+                                         alt="${post.title!}">
+                            </#if>
                             </p>
                         </a>
-                    </#if>
                     <div class="media-content">
                         <div class="content">
                             <div style="padding-top: 10px;">
