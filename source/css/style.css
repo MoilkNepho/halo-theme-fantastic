@@ -664,5 +664,5 @@ p {
   overflow-y: visible !important;
 }
 .blog-slider__img {
-  background-image: none;
+  background-image: none !important;
 }
