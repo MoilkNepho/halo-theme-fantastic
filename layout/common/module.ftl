@@ -16,8 +16,13 @@
                         <div class="blog-slider__item swiper-slide">
                             <div class="blog-slider__img">
                                 <a href="${context!}/archives/${post.url!}">
+                                <#if post.thumbnail?? && post.thumbnail!=''>
                                     <img src="${post.thumbnail!}"
                                          alt="${post.title!}">
+                                <#else>
+                                    <img src="${static!}/source/images/thumbs/${randomMethod(0,15)}.svg"
+                                         alt="${post.title!}">
+                                </#if>
                                 </a>
                             </div>
                             <div class="blog-slider__content">
