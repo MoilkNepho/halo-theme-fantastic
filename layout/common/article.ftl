@@ -4,19 +4,26 @@
     <div class="card" <#if is_post??>style="display: block"</#if> >
         <#if is_post?? || is_page?? || is_sheet??>
         <#else >
-            <#if post.thumbnail?? && post.thumbnail!=''>
                 <div class="card-image">
                     <#if index>
                         <a href="${context!}/archives/${post.url!}">
+                        <#if post.thumbnail?? && post.thumbnail!=''>
                             <img class="thumbnail" src="${post.thumbnail!}" alt="${post.title!}">
+                            <img src="${static!}/source/images/thumbs/${randomMethod(0,15)}.svg"
+                                alt="${post.title!}" style="margin: 0 auto; width: 60%;">
+                        </#if>
                         </a>
                     <#else>
                         <span class="image is-7by1">
+                <#if post.thumbnail?? && post.thumbnail!=''>
                     <img class="thumbnail" src="${post.thumbnail!}" alt="${post.title!}">
+                <#else>
+                   <img src="${static!}/source/images/thumbs/${randomMethod(0,15)}.svg"
+                        alt="${post.title!}" style="margin: 0 auto; width: 60%;"> 
+                </#if>
                 </span>
                     </#if>
                 </div>
-            </#if>
         </#if>
         <div class="card-content article " id="card-content" style="width: 100%">
             <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
