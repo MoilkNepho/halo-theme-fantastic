@@ -21,7 +21,7 @@
                                          alt="${post.title!}">
                                 <#else>
                                     <img src="${static!}/source/images/thumbs/${randomMethod(0,15)}.svg"
-                                         alt="${post.title!}" style="object-fit: fill;background-color: #ffffff80;">
+                                         alt="${post.title!}" style="object-fit: fill;">
                                 </#if>
                                 </a>
                             </div>
