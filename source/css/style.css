@@ -115,6 +115,7 @@ img.thumbnail {
   height: 100%;
   box-shadow: 3px 4px 12px 0 rgba(0,0,0,0.2);
   border-radius: 2px;
+  background-image: linear-gradient(to right, #3e8fff1a 0%, #ff766f33 100%);
 }
 .navbar-logo img,
 .footer-logo img {
