@@ -11,7 +11,7 @@
                             <img class="thumbnail" src="${post.thumbnail!}" alt="${post.title!}">
                         <#else>
                             <img class="thumbnail" src="${static!}/source/images/thumbs/${randomMethod(0,15)}.svg"
-                                alt="${post.title!}" style="object-fit: fill;">
+                                alt="${post.title!}" style="object-fit: fill;filter:none;backgound:none">
                         </#if>
                     </a>
                 <#else>
