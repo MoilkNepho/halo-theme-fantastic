@@ -14,17 +14,21 @@
                 <#list posts.content as post>
                     <#if post.topPriority == 1>
                         <div class="blog-slider__item swiper-slide">
+                            <#if post.thumbnail?? && post.thumbnail!=''>
                             <div class="blog-slider__img">
                                 <a href="${context!}/archives/${post.url!}">
-                                <#if post.thumbnail?? && post.thumbnail!=''>
                                     <img src="${post.thumbnail!}"
                                          alt="${post.title!}">
-                                <#else>
-                                    <img src="${static!}/source/images/thumbs/${randomMethod(0,15)}.svg"
-                                         alt="${post.title!}" style="object-fit: fill;">
-                                </#if>
                                 </a>
                             </div>
+                            <#else>
+                            <div class="blog-slider__img" style="background-image: none;">
+                                <a href="${context!}/archives/${post.url!}">
+                                    <img src="${static!}/source/images/thumbs/${randomMethod(0,15)}.svg"
+                                         alt="${post.title!}" style="object-fit: fill; filter: none;">
+                                </a>
+                            </div>
+                            </#if>
                             <div class="blog-slider__content">
                                 <span class="blog-slider__code">${post.createTime?string["EEE MMM d"]}</span>
                                 <div class="blog-slider__title blog-pin-title"><a class="title is-5" href="${context!}/archives/${post.url!}">${post.title!}</a></div>

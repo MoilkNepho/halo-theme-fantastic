@@ -5,7 +5,7 @@
                 <div class="level">
                     <figure class="image is-64x64 has-mb-6 level-left" style="margin: 0 auto">
                         <img class="is-rounded"
-                             src="${user.avatar!}" alt="${user.nickname!}" style="padding: 2px;
+                             src="${user.avatar!}" alt="${user.nickname!}" style="filter: none; padding: 2px;
 box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);">
                     </figure>
                     <#if settings.profile_enable!true>
