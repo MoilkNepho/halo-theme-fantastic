@@ -15,6 +15,11 @@
         --btn-hover-color: #eeeeee;
         --link-color: #1485FE;
         --link-hover-color: #1485FE;
+        --hr-bg-color: #eeeeee;
+
+        /*code highlight*/
+        --code-bg-color: #f5f2f0;
+        --code-class-color: #DD4A68;
 
         /*toc*/
         --toc-dot-color: #1485FE;
@@ -73,6 +78,7 @@
             --btn-hover-color: #3B3C3E;
             --link-color: #1485FE;
             --link-hover-color: #1485FE;
+            --hr-bg-color: #999999;
 
             /*code highlight*/
             --code-bg-color: #2c2a2a;
@@ -133,6 +139,10 @@
 
     .content a {
         color: var(--link-color);
+    }
+
+    hr {
+        background-color: var(--hr-bg-color);
     }
 
     .content a:hover {
