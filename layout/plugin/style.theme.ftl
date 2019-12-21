@@ -78,7 +78,7 @@
             --btn-hover-color: #3B3C3E;
             --link-color: #1485FE;
             --link-hover-color: #1485FE;
-            --hr-bg-color: #999999;
+            --hr-bg-color: #454545;
 
             /*code highlight*/
             --code-bg-color: #2c2a2a;
