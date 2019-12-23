@@ -5,8 +5,8 @@
         </a>
     </#if>
 </div>
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
-<script src="//cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
+<link rel="stylesheet" href="https://res.moilk.top/js/social-share/dist/css/share.min.css">
+<script src="https://res.moilk.top/js/social-share/dist/js/social-share.min.js"></script>
 <style>
     <#if is_post??>
     .social-share a {
