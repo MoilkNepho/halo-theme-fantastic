@@ -434,7 +434,7 @@ img.thumbnail {
 .content code,
 .content pre {
   font-size: 0.95em;
-  font-family: 'Fira Sans', monospace, "Microsoft YaHei";
+  font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
 }
 .content blockquote footer strong + cite {
   margin-left: 0.5em;
@@ -483,7 +483,7 @@ figure.highlight figcaption:after {
 }
 figure.highlight figcaption span {
   font-weight: 500;
-  font-family: 'Fira Sans', monospace, "Microsoft YaHei";
+  font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
 }
 figure.highlight figcaption .fold,
 figure.highlight figcaption a {

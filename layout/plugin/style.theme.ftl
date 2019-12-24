@@ -196,6 +196,7 @@
     }
 
     span.math {
+        display: inline-block;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
