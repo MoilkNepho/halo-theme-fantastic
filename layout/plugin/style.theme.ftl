@@ -195,6 +195,12 @@
         overflow: auto;
     }
 
+    span.math {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
     .math::-webkit-scrollbar,
     pre[class*="language-"]::-webkit-scrollbar {
         height: 10px;
