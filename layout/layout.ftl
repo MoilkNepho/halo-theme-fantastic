@@ -30,20 +30,12 @@
         <@global.head />
 
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bulma@0.7.5/css/bulma.min.css">
-        <link rel="stylesheet" href="//cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
         <#--        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">-->
         <#if (is_post?? || is_sheet??) && settings.katex_enable!false>
             <link rel="stylesheet" href="https://res.moilk.top/js/katex/katex.min.css">
         </#if>
-        <style>
-            body > .footer,
-            body > .navbar,
-            body > .section {
-                opacity: 0
-            }
-        </style>
-
         <#if is_post?? || is_sheet??>
             <style>
                 .content code .number {
