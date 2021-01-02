@@ -182,6 +182,28 @@ post:
           label: Solarized Light
         - value: TomorrowNight
           label: Tomorrow Night
+    comment_enable:
+      name: comment_enable
+      label: 显示评论
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    post_thumbnail_enable:
+      name: post_thumbnail_enable
+      label: 显示文章封面图
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
 social:
   label: 社交设置
   items:

@@ -15,7 +15,7 @@
                     <#if post.topPriority == 1>
                         <div class="blog-slider__item swiper-slide">
                             <div class="blog-slider__img ">
-                                <a href="${context!}/archives/${post.url!}">
+                                <a href="${post.fullPath!}">
                                 <#if post.thumbnail?? && post.thumbnail!=''>
                                     <img class="thumbnail" src="${post.thumbnail!}"
                                          alt="${post.title!}">
@@ -27,9 +27,9 @@
                             </div>
                             <div class="blog-slider__content">
                                 <span class="blog-slider__code">${post.createTime?string["EEE MMM d"]}</span>
-                                <div class="blog-slider__title blog-pin-title"><a class="title is-5" href="${context!}/archives/${post.url!}">${post.title!}</a></div>
+                                <div class="blog-slider__title "><a class="title is-5" href="${post.fullPath!}">${post.title!}</a></div>
                                 <div class="blog-slider__text blog-pin-disc" content="">${post.summary!}</div>
-                                <a href="${context!}/archives/${post.url!}" class="blog-slider__button">阅读更多</a>
+                                <a href="${post.fullPath!}" target="_blank" class="blog-slider__button">阅读更多</a>
                             </div>
                         </div>
                     </#if>
