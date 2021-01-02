@@ -26,7 +26,7 @@
     <@global.head />
 
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bulma@0.7.5/css/bulma.min.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="//cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <#include "layout/plugin/style.theme.ftl">
 
 
