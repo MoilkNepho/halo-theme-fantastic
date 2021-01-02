@@ -119,6 +119,10 @@
   border-radius: 2px;
   transition: all .3s;
 }
+.blog-slider__img:hover img {
+  -webkit-filter: brightness(0.85);
+  filter: brightness(0.85);
+}
 @media screen and (max-width: 768px) {
   .blog-slider__img {
     transform: translateY(-50%);
@@ -241,7 +245,7 @@
   display: block;
   border-radius: 10px;
   background: #062744;
-  opacity: 0.2;
+  opacity: 0.6;
   transition: all .3s;
 }
 .blog-slider__pagination .swiper-pagination-bullet-active {
